@@ -1,0 +1,29 @@
+<%- include("header") -%>
+	<div class="header">
+		<h1 class="heading">Assign and Revoke Agent</h1>
+	</div>
+	<div id="hcontainer">
+		<div class="hsq"><h2>Left</h1></div>
+		<spam id="message"><%= messages %></spam>
+		<div class="hsq"><h2>Rightt</h1></div>
+	</div>
+	<div id="container">
+		<div class="square">
+			<% for(var i=0;i<Assign;i++){ %>
+					<div class="newsqr"><i class="fas fa-user fa-2x"></i></div>
+			<% } %>
+		</div>
+		<div class="sqbtn">
+			<form class="item" action="/" method="POST">
+				<button type="submit" name="Assbtn" class="" value="assign">Assign</button>
+				<button type="submit" name="Resbtn" class="" value="resume">Revoke</button>
+			</form>
+		</div>
+		<div class="square">
+			<% for(var i=0;i<Resume;i++){ %>
+					<div class="newsqr"><i class="fas fa-user fa-2x"></i></div>
+			<% } %>
+		</div>
+	</div>
+	<br>
+<%- include("footer") -%>
